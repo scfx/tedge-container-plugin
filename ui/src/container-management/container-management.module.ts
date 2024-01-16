@@ -12,7 +12,7 @@ import {
 import { ContainerManagementComponent } from './container-management.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { ContainerFilterPipe } from './container-filter.pipe';
-import { ContainerGuard } from '../../src/shared/container.guard';
+import { ContainerGuard } from './container.guard';
 
 const tabHook = {
   provide: HOOK_ROUTE,

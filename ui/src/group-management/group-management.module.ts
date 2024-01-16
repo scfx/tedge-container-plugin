@@ -13,7 +13,8 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { GroupManagementComponent } from './group-management.component';
 import { ContainerListItemComponent } from './container-list-item/container-list-item.component';
 import { GroupFilterPipe } from './group-filter.pipe';
-import { ContainerGuard } from '../shared/container.guard';
+import { ContainerGroupGuard } from './group.guard';
+
 
 const tabHook = {
   provide: HOOK_ROUTE,
@@ -25,7 +26,7 @@ const tabHook = {
       label: 'Container Groups',
       priority: 998,
       icon: 'packages',
-      canActivate: [ContainerGuard],
+      canActivate: [ContainerGroupGuard],
     },
   ],
   multi: true,
